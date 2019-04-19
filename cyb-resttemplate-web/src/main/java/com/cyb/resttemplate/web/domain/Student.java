@@ -5,6 +5,8 @@ public class Student {
 	private Integer id;
 	
 	private String name;
+	
+	private Boolean registered;
 
 	public Integer getId() {
 		return id;
@@ -20,5 +22,13 @@ public class Student {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public Boolean getRegistered() {
+		return registered;
+	}
+
+	public void setRegistered(Boolean registered) {
+		this.registered = registered;
 	}
 }

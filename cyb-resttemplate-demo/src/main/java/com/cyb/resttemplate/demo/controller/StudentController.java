@@ -42,7 +42,6 @@ public class StudentController {
 	    }
 	    
 	    HttpEntity<String> httpEntity = new HttpEntity<>(body, headers);
-	    RestTemplate restTemplate = new RestTemplate();
 	    try {
 	        return restTemplate.exchange(proxyUri, method, httpEntity, String.class);
 	    } catch(HttpStatusCodeException e) {
