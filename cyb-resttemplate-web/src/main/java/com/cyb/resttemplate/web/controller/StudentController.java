@@ -46,7 +46,8 @@ public class StudentController {
 	}
 
 	@GetMapping("{id}")
-	public Student getStudentById(@PathVariable Integer id) {
+	public Student getStudentById(@PathVariable Integer id) throws InterruptedException {
+		Thread.sleep(20000);
 		return students.get(id);
 	}
 
